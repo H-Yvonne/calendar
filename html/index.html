@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>日历</title>
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <meta http-equiv="Expires" CONTENT="-1">
+        <meta http-equiv="Cache-Control" CONTENT="no-cache">
+        <link rel="stylesheet" href="../src/css/index.css">
+    </head>
+    <body>
+        <button>显示</button>
+        <!-- <div>
+            <div class="calendar-wrap">
+                <header class="calendar-title-wrap">
+                    <h1 class="calendar-title">选择日期</h1>
+                    <a href="" class="calendar-back-icon"></a>
+                </header>
+                <ul class="calendar-sub-title">
+                    <li class="it">日</li>
+                    <li class="it">一</li>
+                    <li class="it">二</li>
+                    <li class="it">三</li>
+                    <li class="it">四</li>
+                    <li class="it">五</li>
+                    <li class="it">六</li>
+                </ul>
+                <div class="calendar-main-wrap">
+                    <section class="calendar-main-item">
+                        <h1 class="main-date-title">2016年04月</h1>
+                        <ul class="main-date-list">
+                            <li class="it"></li>
+                            <li class="it"></li>
+                            <li class="it"></li>
+                            <li class="it"></li>
+                            <li class="it"></li>
+                            <li data-day="2016-04-01" class="it disabled">
+                                <span class="date-elem">1</span>
+                            </li>
+                            <li data-day="2016-04-02" class="it disabled">
+                                <span class="date-elem">2</span>
+                            </li>
+                            <li data-day="2016-04-02" class="it">
+                                <span class="date-elem">3</span>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="calendar-main-item">
+                        <h1 class="main-date-title">2016年04月</h1>
+                        <ul class="main-date-list">
+                            <li class="it"></li>
+                            <li class="it"></li>
+                            <li class="it"></li>
+                            <li class="it"></li>
+                            <li class="it"></li>
+                            <li data-day="2016-04-01" class="it disabled">
+                                <span class="date-elem">1</span>
+                            </li>
+                            <li data-day="2016-04-02" class="it disabled">
+                                <span class="date-elem">2</span>
+                            </li>
+                            <li data-day="2016-04-02" class="it">
+                                <span class="date-elem">3</span>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="calendar-main-item">
+                        <h1 class="main-date-title">2016年04月</h1>
+                        <ul class="main-date-list">
+                            <li class="it"></li>
+                            <li class="it"></li>
+                            <li class="it"></li>
+                            <li class="it"></li>
+                            <li class="it"></li>
+                            <li data-day="2016-04-01" class="it disabled">
+                                <span class="date-elem">1</span>
+                            </li>
+                            <li data-day="2016-04-02" class="it disabled">
+                                <span class="date-elem">2</span>
+                            </li>
+                            <li data-day="2016-04-02" class="it">
+                                <span class="date-elem">3</span>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="calendar-mask-layer"></div>
+        </div> -->
+    </body>
+</html>
+<script type="text/javascript" src="../src/js/jquery.js"></script>
+<script type="text/javascript" src="../src/js/calendar.js"></script>
+<script type="text/javascript">
+$('button').click(function () {
+    calendar({
+        showStart: '6',
+        showYear: '2016',
+        callback: function (d) {
+            console.log(d);
+        }
+    });
+})
+    
+</script>

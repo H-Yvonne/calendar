@@ -1,0 +1,184 @@
+@charset "UTF-8";
+.transparent-background { background-color: transparent; zoom: 1; }
+
+html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adject: 100%; -webkit-overflow-scrolling: touch; overflow-y: scroll; }
+
+/** remove default marign */
+body { margin: 0; font-size: 16px; line-height: 1.5; color: #999999; background-color: white; }
+
+/* HTML5 display definitions ========================================================================== */
+/** Correct `block` display not defined for any HTML5 element in IE 8/9. Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox. Correct `block` display not defined for `main` in IE 11. */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+
+/** corrent 'inline-block' display not defined in ie8/9 */
+audio, canvas, progress, video { display: inline-block; vertical-align: baseline; }
+
+/** links ===================== remove the gray background color form active links in ie10 improve readability when focused and also mouse hovered in all browsers */
+a { background: transparent; text-decoration: none; color: #9fc55c; }
+a:active, a:hover { outline: 0; }
+a:hover { color: #87b03e; }
+
+/*Text level semantics */
+/** Address styling not present in ie8/9/10,safari,and chrome */
+abbr[title] { border-bottom: 1px dotted; }
+
+/*address style set to 'bloder' in firefox 4+,safari,and chrome */
+b, strong { font-weight: bold; }
+
+dfn { font-style: italic; }
+
+/** Address styleing not present in ie8/9 */
+mark { background: #ff0; color: #000; }
+
+/** address inconsisent and variable font size in all borwsers */
+small { font-size: 80%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+/** Embedded content =========================== remove border when inside 'a' element in IE 8/9/10 */
+img { border: 0; vertical-align: middle; }
+
+svg:not(:root) { overflow: hidden; }
+
+/* Grouping content ========================================================================== */
+/** Address differences between Firefox and other browsers. */
+hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
+
+/** 1. Contain overflow in all browsers. 2. Improve readability of pre-formatted text in all browsers. */
+pre { overflow: auto; /* 1 */ white-space: pre; /* 2 */ white-space: pre-wrap; /* 2 */ word-wrap: break-word; /* 2 */ }
+
+/** 1. Address odd `em`-unit font size rendering in all browsers. 2. Correct font family set oddly in IE 6, Safari 4/5, and Chrome. */
+code, kbd, pre, samp { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+
+/* Forms ========================================================================== */
+/** Known limitation: by default, Chrome and Safari on OS X allow very limited styling of `select`, unless a `border` property is set. */
+/** 1. Correct color not being inherited. Known issue: affects color of disabled elements. 2. Correct font properties not being inherited. 3. Address margins set differently in Firefox 4+, Safari, and Chrome. */
+button, input, optgroup, select, textarea { color: inherit; /* 1 */ font: inherit; /* 2 */ margin: 0; /* 3 */ }
+
+/** Address `overflow` set to `hidden` in IE 8/9/10/11. */
+button { overflow: visible; }
+
+/** Address inconsistent `text-transform` inheritance for `button` and `select`. All other form control elements do not inherit `text-transform` values. Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera. Correct `select` style inheritance in Firefox. */
+button, select { text-transform: none; }
+
+/** 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` and `video` controls. 2. Correct inability to style clickable `input` types in iOS. 3. Improve usability and consistency of cursor style between image-type `input` and others. 4. Remove inner spacing in IE 7 without affecting normal text inputs. Known issue: inner spacing remains in IE 6. */
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; /* 2 */ cursor: pointer; /* 3 */ }
+
+/** Re-set default cursor for disabled elements. */
+button[disabled], html input[disabled] { cursor: default; }
+
+/** Remove inner padding and border in Firefox 4+. */
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/** Address Firefox 4+ setting `line-height` on `input` using `!important` in the UA stylesheet. */
+input { line-height: normal; }
+
+/** It's recommended that you don't attempt to style these elements. Firefox's implementation doesn't respect box-sizing, padding, or width.  1. Address box sizing set to `content-box` in IE 8/9/10. 2. Remove excess padding in IE 8/9/10. 3. Remove excess padding in IE 7. Known issue: excess padding remains in IE 6. */
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+
+/** Fix the cursor style for Chrome's increment/decrement buttons. For certain `font-size` values of the `input`, it causes the cursor style of the decrement button to change from `default` to `text`. */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { height: auto; }
+
+/** Define consistent border, margin, and padding. */
+fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+
+/** 1. Correct `color` not being inherited in IE 8/9/10/11. 2. Remove padding so people aren't caught out if they zero out fieldsets. 3. Correct alignment displayed oddly in IE 6/7. */
+legend { border: 0; /* 1 */ padding: 0; /* 2 */ }
+
+/** 1. Remove default vertical scrollbar in IE 8/9/10/11. 0. sassCore's style */
+textarea { overflow: auto; /* 1 */ resize: vertical; /* 0 */ }
+
+/** Don't inherit the `font-weight` (applied by a rule above). NOTE: the default cannot safely be changed in Chrome and Safari on OS X. */
+optgroup { font-weight: bold; }
+
+/* Tables ========================================================================== */
+/** Remove most spacing between table cells. */
+table { border-collapse: collapse; border-spacing: 0; }
+
+td, th { padding: 0; }
+
+/** Address CSS quotes not supported in IE 6/7. */
+html, button, input, select, textarea { font-family: "Helvetica Neue", Helvetica, Tahoma, sans-serif; }
+
+h1, h2, h3, h4, h5, h6, p, figure, form, blockquote { margin: 0; }
+
+ul, ol, li, dl, dd { margin: 0; padding: 0; }
+
+ul, ol { list-style: none outside none; }
+
+h1, h2, h3 { line-height: 2; font-weight: normal; }
+
+h1 { font-size: 24px; }
+
+h2 { font-size: 20.8px; }
+
+h3 { font-size: 18.72px; }
+
+h4 { font-size: 16px; }
+
+h5, h6 { font-size: 13.6px; text-transform: uppercase; }
+
+input:-moz-placeholder, textarea:-moz-placeholder { color: #cccccc; }
+
+input::-moz-placeholder, textarea::-moz-placeholder { color: #cccccc; }
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #cccccc; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #cccccc; }
+
+@media print { * { background: transparent !important; color: #000 !important; box-shadow: none !important; text-shadow: none !important; }
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; } }
+* { box-sizing: border-box; }
+
+body { margin: 0; }
+
+html, body { height: 100%; }
+
+.calendar-wrap { min-width: 320px; width: 540px; height: 620px; background-color: white; font-family: "微软雅黑"; font-size: 32px; position: absolute; top: 50%; left: 50%; margin-left: -270px; margin-top: -310px; border-radius: 5px; overflow: hidden; z-index: 1001; }
+
+.calendar-title-wrap { height: 44px; padding: 0 10px; position: relative; overflow: hidden; }
+.calendar-title-wrap .calendar-title { width: 100%; font-size: 0.625em; color: #444; text-align: center; line-height: 2.2; position: absolute; top: 0; left: 0; }
+.calendar-title-wrap .calendar-back-icon { float: left; display: inline-block; width: 34px; height: 44px; line-height: 44px; font-size: 24px; padding-top: 3px; color: #858585; margin-left: -10px; padding-left: 10px; position: relative; z-index: 20; }
+.calendar-title-wrap .calendar-back-icon:before { content: ''; display: block; width: 14px; height: 14px; position: absolute; top: 50%; right: 0; margin-top: -9px; border: 1px solid #858585; border-width: 0 0 2px 2px; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+
+.calendar-sub-title { display: block; height: 30px; line-height: 30px; border-bottom: 1px solid #c8c8c8; background-color: #f0f0f0; padding: 0 6%; }
+.calendar-sub-title .it { float: left; width: 14%; text-align: center; font-size: 0.5em; color: black; margin: 0; padding: 0; }
+.calendar-sub-title .it:nth-of-type(7n), .calendar-sub-title .it:nth-of-type(7n+1) { width: 15%; color: #e65749; }
+
+.calendar-main-wrap { height: 100%; padding-bottom: 87px; overflow: auto; }
+
+.calendar-main-item { padding: 0 3% 0 7%; overflow: hidden; }
+.calendar-main-item .main-date-title { height: 56px; line-height: 56px; text-align: center; color: black; font-size: 16px; font-weight: bold; }
+
+.main-date-list { display: inline-block; width: 100%; border-left: 1px solid #e4e4e4; }
+.main-date-list .it { float: left; width: 14%; height: 46px; line-height: 46px; text-align: center; font-size: 16px; border-bottom: 1px solid #e4e4e4; border-right: 1px solid #e4e4e4; color: #000; font-weight: bold; }
+.main-date-list .it:nth-of-type(1), .main-date-list .it:nth-of-type(2), .main-date-list .it:nth-of-type(3), .main-date-list .it:nth-of-type(4), .main-date-list .it:nth-of-type(5), .main-date-list .it:nth-of-type(6), .main-date-list .it:nth-of-type(7) { border-top: 1px solid #e4e4e4; }
+.main-date-list .it:nth-of-type(7n), .main-date-list .it:nth-of-type(7n+1) { width: 15%; }
+.main-date-list .it:nth-of-type(7n) .main-date-btn, .main-date-list .it:nth-of-type(7n+1) .main-date-btn { color: #e65749; }
+.main-date-list .disabled .main-date-btn { color: #bababa; }
+.main-date-list .active { background-color: #f1f1f1; }
+.main-date-list .main-date-btn { display: block; width: 100%; height: 100%; color: #000; }
+
+.calendar-mask-layer { width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.7); z-index: 1000; }
+
+@media screen and (max-width: 768px) { .calendar-wrap { width: 80%; height: 620px; top: 15%; left: 10%; margin-left: 0; margin-top: 0; bottom: 15%; }
+  .calendar-title-wrap .calendar-title { line-height: 3.2; }
+  .calendar-sub-title { padding: 0; }
+  .calendar-main-item { padding: 0; }
+  .main-date-list .it { width: 14%; } }
+@media screen and (max-width: 480px) { .calendar-wrap { width: 100%; height: 100%; top: 0; left: 0; font-size: 28px; } }
+@media screen and (max-width: 320px) { .calendar-wrap { width: 100%; height: 100%; top: 0; left: 0; font-size: 24px; } }
